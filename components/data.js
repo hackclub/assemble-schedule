@@ -1,7 +1,6 @@
 import { Component } from 'react'
 
-const getSchedule = () => {
-  window.schedule = [
+const schedule = [
     {
       day: {
         short: 'Fri',
@@ -57,14 +56,5 @@ const getSchedule = () => {
       ]
     },
   ]
-}
 
-class DataLoader extends Component {
-  componentWillMount() {
-    getSchedule()
-  }
-
-  render() { return null }
-}
-
-export default DataLoader
+  export default schedule

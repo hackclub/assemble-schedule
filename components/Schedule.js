@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Box, Card, Heading, Text, theme } from '@hackclub/design-system'
+import schedule from './data.js'
 
 import EventCard from './EventCard'
 
