@@ -22,7 +22,6 @@ export default () => (
     <Container maxWidth={32}>
       <Image src="/static/ship.svg" alt="Flagship artwork" />
     </Container>
-    <Section bg="#5295D5" style={{borderBottom: '15em solid #5295D5'}}>
-    </Section>
+    <Section bg="#5295D5" style={{minHeight: '12em'}} />
   </>
 )

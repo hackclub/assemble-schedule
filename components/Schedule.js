@@ -5,7 +5,7 @@ import data from './data.js'
 
 import EventCard from './EventCard'
 
-const Base = styled(Box).attrs({`
+const Base = styled(Box).attrs({px:[2,4,5],pb:[4,5]})`
   display: grid;
   grid-gap: ${theme.space[3]}px;
   ${theme.mediaQueries.lg} {
@@ -14,14 +14,24 @@ const Base = styled(Box).attrs({`
   }
 `
 
+const DaySheet = styled(Sheet)`
+  background: ${theme.colors.white};
+  // @media (prefers-color-scheme: dark) {
+  //   background: ${theme.colors.dark};
+  // }
+`
+
 // Largely based on https://codyhouse.co/demo/schedule-template/index.html
 
-const DayHeading = styled(Heading.h2)`
+const DayHeading = styled(Heading.h2).attrs({ mt: 0 })`
   position: sticky;
   display: block;
-  background: ${theme.cx('white')};
   width: 2.5em;
   z-index: 10;
+  background: ${theme.colors.white};
+  // @media (prefers-color-scheme: dark) {
+  //   background: ${theme.colors.dark};
+  // }
 `
 
 const Ul = styled.ul`
@@ -87,31 +97,22 @@ const Chunk = ({ time }) => (
 //   </Block>
 // )
 
-const lengthOfDay = (events) => {
-  // const startTime = events.map(e => new Date(e.start)).sort[0]
-  // const endTime = events.map(e => new Date(e.end).sort().pop())
-  // const result = [startTime]
-  // let cursor = startTime
-  // while(cursor < endTime) {
-  //   cursor + 
-  // }
-  return ['9:00 am', '10:00 am', '11:00 am', '12:00 pm', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm', '8:00 pm', '9:00 pm', '10:00 pm']
-}
+const lengthOfDay = ['9:00 am', '10:00 am', '11:00 am', '12:00 pm', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm', '8:00 pm', '9:00 pm', '10:00 pm']
 
 export default ({ schedule = data }) => (
   <Base>
     {schedule.map((date) => (
-      <Sheet bg="white" key={date.day.number} py={3} px={[2, 3]}>
+      <DaySheet key={date.day.number} py={3} px={[2, 3]}>
         <DayHeading>{date.day.short}</DayHeading>
         <Ul style={{position: 'relative'}}>
           {date.events.map(e => (<EventCard key={e.name} event={e} />))}
         </Ul>
         <Ul>
-          {lengthOfDay(date.events).map(d => (
+          {lengthOfDay.map(d => (
             <Chunk time={d} key={d} />
           ))}
         </Ul>
-      </Sheet>
+      </DaySheet>
     ))}
   </Base>
 )
