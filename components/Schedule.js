@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Box, Card, Heading, Text, theme } from '@hackclub/design-system'
-import schedule from './data.js'
+import data from './data.js'
 
 import EventCard from './EventCard'
 
@@ -90,7 +90,7 @@ const lengthOfDay = (events) => {
   return ['9:00 am', '10:00 am', '11:00 am', '12:00 pm', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm', '8:00 pm', '9:00 pm', '10:00 pm']
 }
 
-export default ({ schedule }) => (
+export default ({ schedule = data }) => (
   <>
     {schedule.map((date) => (
       <Card bg="white" key={date.day.number} my={3} py={3} px={[2, 3]}>

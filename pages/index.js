@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Image, Section, Badge, Box, Text, Flex, Card, Container, Heading, Divider, theme } from '@hackclub/design-system'
-// import Layout from '../components/Layout'
 import Schedule from '../components/Schedule'
 
 const FlagshipHeading = styled(Heading.h1)`
@@ -12,7 +11,7 @@ const FlagshipHeading = styled(Heading.h1)`
 `
 
 export default () => (
-  // <Layout>
+  <>
     <Container maxWidth={32}>
       <FlagshipHeading color="white" align="center" my={5} fontSize={[6, 8]}>
         Flagship<br />
@@ -21,9 +20,9 @@ export default () => (
       <Schedule />
     </Container>
     <Container maxWidth={32}>
-      <Image src="ship.svg" />
+      <Image src="/static/ship.svg" alt="Flagship artwork" />
     </Container>
     <Section bg="#5295D5" style={{borderBottom: '15em solid #5295D5'}}>
     </Section>
-  // </Layout>
+  </>
 )

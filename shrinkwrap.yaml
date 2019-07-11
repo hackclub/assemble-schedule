@@ -1,5 +1,6 @@
 dependencies:
   '@hackclub/design-system': 0.0.1-16
+  babel-plugin-styled-components: 1.10.6
   next: 9.0.1
   react: 16.8.6
   react-dom: 16.8.6
@@ -12650,6 +12651,7 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   '@hackclub/design-system': 0.0.1-16
+  babel-plugin-styled-components: ^1.10.0
   next: ^9.0.1
   react: ^16.8.2
   react-dom: ^16.8.2
