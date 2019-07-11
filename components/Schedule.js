@@ -1,15 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Card, Heading, Text, theme } from '@hackclub/design-system'
+import { Box, Flex, Sheet, Heading, Text, theme } from '@hackclub/design-system'
 import data from './data.js'
 
 import EventCard from './EventCard'
 
+const Base = styled(Box).attrs({`
+  display: grid;
+  grid-gap: ${theme.space[3]}px;
+  ${theme.mediaQueries.lg} {
+    grid-gap: ${theme.space[4]}px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+`
+
 // Largely based on https://codyhouse.co/demo/schedule-template/index.html
 
-const DayHeading = styled(Heading)`
+const DayHeading = styled(Heading.h2)`
   position: sticky;
-  top: 1em;
   display: block;
   background: ${theme.cx('white')};
   width: 2.5em;
@@ -91,9 +99,9 @@ const lengthOfDay = (events) => {
 }
 
 export default ({ schedule = data }) => (
-  <>
+  <Base>
     {schedule.map((date) => (
-      <Card bg="white" key={date.day.number} my={3} py={3} px={[2, 3]}>
+      <Sheet bg="white" key={date.day.number} py={3} px={[2, 3]}>
         <DayHeading>{date.day.short}</DayHeading>
         <Ul style={{position: 'relative'}}>
           {date.events.map(e => (<EventCard key={e.name} event={e} />))}
@@ -103,7 +111,7 @@ export default ({ schedule = data }) => (
             <Chunk time={d} key={d} />
           ))}
         </Ul>
-      </Card>
+      </Sheet>
     ))}
-  </>
+  </Base>
 )

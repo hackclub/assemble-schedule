@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import {Divider, Heading, Box, Text, theme} from '@hackclub/design-system'
+import { Heading, Box, Text, theme } from '@hackclub/design-system'
 import Modal from './Modal'
 
 // Pasted straight from https://css-tricks.com/snippets/javascript/lighten-darken-color/
@@ -69,8 +69,7 @@ class EventCard extends Component {
   state = { active: false }
 
   toggle = () => {
-    const { active } = this.state
-    this.setState({active: !active})
+    this.setState(state => ({active: !state.active}))
   }
 
   render() {
@@ -80,8 +79,7 @@ class EventCard extends Component {
       <>
         {active && <Modal toggle={this.toggle}>
           <Heading>{name}</Heading>
-          <Text color="muted">{start} - {end}</Text>
-          <Divider />
+          <Text color="muted">{start} – {end}</Text>
           <Text>{summary}</Text>
         </Modal>}
         <Block color="white" p={1} start={start} end={end} flavor={flavor} onClick={this.toggle}>

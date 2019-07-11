@@ -17,8 +17,8 @@ export default () => (
         Flagship<br />
         <strong><Text.span fontSize={[8, 9]}>Route</Text.span></strong>
       </FlagshipHeading>
-      <Schedule />
     </Container>
+    <Schedule />
     <Container maxWidth={32}>
       <Image src="/static/ship.svg" alt="Flagship artwork" />
     </Container>
