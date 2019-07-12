@@ -65,7 +65,7 @@ Guests with available office hours:
 - Sonia Sachar, MLH Coach
 - Zach Latta, Founder of Hack Club
 
-You can request office hours with a random guest by reaching out to hello@flagshipsummit.com.
+You can request office hours with a random guest [here](https://forms.gle/Hus8GmbZjVBLdKVz9).
       ` },
       { name: 'Break-out sessions', start: '3:45 pm', end: '4:45 pm', summary: `
 **The Deck:** Beyond CS Club _Ran by Megan._
@@ -75,7 +75,7 @@ You can request office hours with a random guest by reaching out to hello@flagsh
 **Hong Kong:** Serving your member's interests _Run by Alex._
 ` },
       { name: 'Closing remarks', start: '4:45 pm', end: '5:15 pm' },
-      { name: 'Cybersecurity', subtitle: 'Hacker game', start: '5:15 pm', end: '6:15 pm', summary: 'War games, CTFs, hacker games. Lead by Dina.' },
+      { name: 'Cybersecurity', subtitle: 'Hacker game', start: '5:15 pm', end: '6:15 pm', summary: 'War games, CTFs, hacker games. Lead by Dina and Charissa.' },
       { name: 'Dinner', start: '6:15 pm', end: '8:15 pm', flavor: 'food' },
       { name: 'Unstructured Games', start: '8:15 pm', end: '10:00 pm' },
     ]
@@ -96,7 +96,7 @@ Guests with available office hours:
 - Sonia Sachar, MLH Coach
 - Zach Latta, Founder of Hack Club
 
-You can request office hours with a random guest by reaching out to hello@flagshipsummit.com.
+You can request office hours with a random guest at [here](https://forms.gle/Hus8GmbZjVBLdKVz9).
       ` },
       { name: 'Break-out sessions', start: '11:00 am', end: '12:00 pm' },
       { name: 'Lunch', start: '12:00 pm', end: '1:00 pm', flavor: 'food', summary: '' },
