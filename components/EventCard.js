@@ -94,7 +94,9 @@ class EventCard extends Component {
             <Text color="muted" mb={3}>
               {start}–{end}
             </Text>
-            <Text>{summary}</Text>
+            <Text>
+              {summary}
+            </Text>
           </Modal>
         )}
         <Block
