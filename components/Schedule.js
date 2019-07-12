@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box, Flex, Sheet, Heading, Text, theme } from '@hackclub/design-system'
+import { Box, Flex, Sheet, Heading, Text } from '@hackclub/design-system'
+import theme from './style'
 import data from './data.js'
 
 import EventCard from './EventCard'
 
-const Base = styled(Box).attrs({px:[2,4,5],pb:[4,5]})`
+const Base = styled(Box).attrs({ px: [2, 4], pb: [4, 5] })`
   display: grid;
   grid-gap: ${theme.space[3]}px;
   ${theme.mediaQueries.lg} {
@@ -72,14 +73,15 @@ const Li = styled.li`
   }
 `
 
+const ChunkLabel = styled(Text.span).attrs({ color: theme.colors.muted, fontSize: 1 })`
+  display: inline-block;
+  vertical-align: sub;
+`
+// 30-minute chunk of time
 const Chunk = ({ time }) => (
   <>
-    <Li><Text.span color="muted" fontSize={1} style={{ verticalAlign: 'sub', display: 'inline-block' }}>{time}</Text.span></Li>
-    {time && (
-      <>
-        <Chunk />
-      </>
-    )}
+    <Li><ChunkLabel>{time}</ChunkLabel></Li>
+    {time && <Chunk />}
   </>
 )
 
@@ -104,7 +106,7 @@ export default ({ schedule = data }) => (
     {schedule.map((date) => (
       <DaySheet key={date.day.number} py={3} px={[2, 3]}>
         <DayHeading>{date.day.short}</DayHeading>
-        <Ul style={{position: 'relative'}}>
+        <Ul style={{ position: 'relative' }}>
           {date.events.map(e => (<EventCard key={e.name} event={e} />))}
         </Ul>
         <Ul>

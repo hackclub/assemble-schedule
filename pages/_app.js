@@ -1,7 +1,8 @@
 import React from 'react'
 import App, { Container } from 'next/app'
 import Head from 'next/head'
-import { ThemeProvider, theme } from '@hackclub/design-system'
+import { ThemeProvider } from '@hackclub/design-system'
+import theme from '../components/style'
 
 export default class extends App {
   render () {
@@ -14,7 +15,7 @@ export default class extends App {
           {/* <style children={`body{background:${cx('darker')};}`} /> */}
           <style children={`body{background:${theme.cx('#EEAA48')};background-image:${theme.gradient('#EEAA48','#F0984A')};}`} />
         </Head>
-        <ThemeProvider webfonts>
+        <ThemeProvider theme={theme} webfonts>
           <Component {...pageProps} />
         </ThemeProvider>
       </Container>

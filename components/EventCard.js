@@ -36,8 +36,8 @@ const Block = styled(Box)`
   z-index: 2;
   cursor: pointer;
   transition-duration: 0.5s;
-  ${props => (props.flavor == "closing" && `background: ${theme.cx('primary')} !important;`)}
-  ${props => (props.flavor == "food" && `background: ${theme.cx('accent')} !important;`)}
+  ${props => (props.flavor == "closing" && `background: ${theme.cx('red')} !important;`)}
+  ${props => (props.flavor == "food" && `background: ${theme.cx('orange')} !important;`)}
 
   &:hover {
     background: ${LightenDarkenColor(theme.cx('info'), -10)};
@@ -62,8 +62,6 @@ const toSpecialTime = (hhmmap) => {
 
   return result
 }
-
-const ModalBackground = Box 
 
 class EventCard extends Component {
   state = { active: false }
