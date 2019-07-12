@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
 import { Heading, Box, Text, Icon } from '@hackclub/design-system'
+import { MDXProvider } from '@mdx-js/react'
 import theme from './style'
 import Modal from './Modal'
 
