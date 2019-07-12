@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
 import { Heading, Box, Text, Icon } from '@hackclub/design-system'
 // import {MDXProvider} from '@mdx-js/react'
-import MDX from '@mdx-js/runtime'
+// import MDX from '@mdx-js/runtime'
+import MD from 'react-markdown'
 import theme from './style'
 import Modal from './Modal'
 
@@ -99,10 +100,7 @@ class EventCard extends Component {
             <Text color="muted" mb={3}>
               {start}–{end}
             </Text>
-            <Text>
-              {summary}
-            </Text>
-            <MDX components={components}>{summary}</MDX>
+            <MD source={summary} />
           </Modal>
         )}
         <Block
