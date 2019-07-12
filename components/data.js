@@ -16,11 +16,11 @@ const schedule = [
     events: [
       { name: 'Registration', start: '12:00 pm', end: '2:00 pm', summary: 'For questions or assistance: (415) 805-1774' },
       { name: 'Opening ceremony', start: '2:00 pm', end: '2:30 pm' },
-      { name: 'Keynote: Jeremy Rossmann', subtitle: 'Co-founder of Make School', start: '2:30 pm', end: '3:15 pm',  },
-      { name: 'Pitch Your Passion', subtitle: 'Make School Workshop', start: '3:15 pm', end: '4:30 pm', summary: 'How to pitch your passion for programming to inspire other and grow your club and hackathon attendance. Featuring Jordan Arnesen, Curriculum Engineer at Make School.' },
+      { name: 'Keynote: Jeremy Rossmann', subtitle: 'Co-founder of Make School', start: '2:30 pm', end: '3:15 pm'  },
+      { name: 'Pitch Your Passion', subtitle: 'Make School Workshop', start: '3:15 pm', end: '4:30 pm', summary: 'How to pitch your passion for programming to inspire others and grow your club and hackathon attendance. Featuring Jordan Arnesen, Curriculum Engineer at Make School.' },
       { name: 'Keynote: Kat Mañalac', subtitle: 'YC Partner', start: '4:30 pm', end: '5:00 pm', summary: 'Kat was Chief of Staff to Alexis Ohanian, cofounder of reddit, before joining YC as its Director of Outreach.' },
       { name: 'Dinner', subtitle: 'Pizza', start: '5:00 pm', end: '6:00 pm', flavor: 'food', summary: 'Pizza by the slice from Oz Pizza.' },
-      { name: 'Afternoon activities', start: '6:00 pm', end: '10:00 pm', summary: 'Check-in at hostels or hang out at the venue' },
+      { name: 'Afternoon activities', start: '6:00 pm', end: '10:00 pm', summary: 'Check-in at hostels or hang out at the venue. Boardgames will be available.' },
     ]
   },
   {
@@ -33,7 +33,10 @@ const schedule = [
     events: [
       { name: 'Check-in / Breakfast', start: '9:00 am', end: '9:30 am', flavor: 'food', summary: `Light breakfast provided at Make School w/ fresh fruit, snack bars, yogurt, tea, coffee. Attendees with lodging will have a larger breakfast available at their hostels.` },
       { name: 'Keynote: Zach Latta', subtitle: 'Founder of Hack Club', start: '9:30 am', end: '10:30 am' },
-      { name: 'Break-out sessions', start: '10:30 am', end: '11:30 am' },
+      { name: 'Break-out sessions', start: '10:30 am', end: '11:30 am', summary: `
+**The Deck:** How to Start Your First Hackathon (Lachlan)
+**San Francisco:** 
+` },
       { name: 'Break-out sessions', start: '11:30 am', end: '12:30 pm' },
       { name: 'Lunch', subtitle: 'Sandwiches & Salads', start: '12:30 pm', end: '1:45 pm', flavor: 'food', summary: 'Catered by Bi-Rite' },
       { name: 'Break-out sessions', start: '1:45 pm', end: '2:30 pm' },
