@@ -74,8 +74,8 @@ You can request office hours with a random guest by reaching out to hello@flagsh
 
 **Hong Kong:** Serving your member's interests _Run by Alex._
 ` },
-      { name: 'Closing remarks', start: '4:30 pm', end: '5:00 pm' },
-      { name: 'Cybersecurity', start: '5:00 pm', end: '6:15 pm' },
+      { name: 'Closing remarks', start: '4:45 pm', end: '5:15 pm' },
+      { name: 'Cybersecurity', subtitle: 'Hacker game', start: '5:15 pm', end: '6:15 pm', summary: 'War games, CTFs, hacker games. Lead by Dina.' },
       { name: 'Dinner', start: '6:15 pm', end: '8:15 pm', flavor: 'food' },
       { name: 'Unstructured Games', start: '8:15 pm', end: '10:00 pm' },
     ]
