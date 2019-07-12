@@ -34,12 +34,27 @@ const schedule = [
       { name: 'Check-in / Breakfast', start: '9:00 am', end: '9:30 am', flavor: 'food', summary: `Light breakfast provided at Make School w/ fresh fruit, snack bars, yogurt, tea, coffee. Attendees with lodging will have a larger breakfast available at their hostels.` },
       { name: 'Keynote: Zach Latta', subtitle: 'Founder of Hack Club', start: '9:30 am', end: '10:30 am' },
       { name: 'Break-out sessions', start: '10:30 am', end: '11:30 am', summary: `
-**The Deck:** How to Start Your First Hackathon (Lachlan)
-**San Francisco:** 
+**The Deck:** How to Start Your First Hackathon _Ran by Lachlan_
+
+**San Francisco:** Party Club _How to make your club a party for new members. Ran by Eureka._
+
+**Hong Kong:** Hacker Tools _Quick and dirty tools for the high speed hacker. Ran by Max Speed._
 ` },
-      { name: 'Break-out sessions', start: '11:30 am', end: '12:30 pm' },
+      { name: 'Break-out sessions', start: '11:30 am', end: '12:30 pm', summary: `
+**The Deck:** Creative Marketing for CS Clubs _Ran by Matthew_
+
+**San Francisco:** Diversity and Inclusion in Hackathons _Ran by Emily, Charissa, Lavi._
+
+**Hong Kong:** Koding 4 Kids _Run by Ava and Jack._
+` },
       { name: 'Lunch', subtitle: 'Sandwiches & Salads', start: '12:30 pm', end: '1:45 pm', flavor: 'food', summary: 'Catered by Bi-Rite' },
-      { name: 'Break-out sessions', start: '1:45 pm', end: '2:30 pm' },
+      { name: 'Break-out sessions', start: '1:45 pm', end: '2:30 pm', summary: `
+**The Deck:** Running Club Meetings Beyond the Workshops _Ran by Dina._
+
+**San Francisco:** Community @ Hackathons _Ran by Dave._
+
+**Hong Kong:** "Green" Hackathons _Run by Sean._
+` },
       { name: 'Office hours', start: '2:30 pm', end: '3:45 pm', summary: `
 Guests with available office hours:
 
@@ -52,7 +67,13 @@ Guests with available office hours:
 
 You can request office hours with a random guest by reaching out to hello@flagshipsummit.com.
       ` },
-      { name: 'Break-out sessions', start: '3:45 pm', end: '4:45 pm' },
+      { name: 'Break-out sessions', start: '3:45 pm', end: '4:45 pm', summary: `
+**The Deck:** Beyond CS Club _Ran by Megan._
+
+**San Francisco:** Team Building & Transition _Ran by Mingjie and Sean._
+
+**Hong Kong:** Serving your member's interests _Run by Alex._
+` },
       { name: 'Closing remarks', start: '4:30 pm', end: '5:00 pm' },
       { name: 'Cybersecurity', start: '5:00 pm', end: '6:15 pm' },
       { name: 'Dinner', start: '6:15 pm', end: '8:15 pm', flavor: 'food' },
