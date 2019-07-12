@@ -128,7 +128,7 @@ export default ({ schedule = data }) => (
         <DayHeading>{date.day.short}</DayHeading>
         <Ul style={{ position: 'relative' }}>
           {date.events.map(e => (
-            <EventCard key={e.name} event={e} />
+            <EventCard key={e.name + e.start} event={e} />
           ))}
         </Ul>
         <Ul>
