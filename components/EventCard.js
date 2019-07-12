@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import styled, { css } from 'styled-components'
 import { Heading, Box, Text, Icon } from '@hackclub/design-system'
-import { MDXProvider } from '@mdx-js/react'
+// import {MDXProvider} from '@mdx-js/react'
+import MDX from '@mdx-js/runtime'
 import theme from './style'
 import Modal from './Modal'
 
@@ -76,6 +77,10 @@ const toSpecialTime = hhmmap => {
   return result
 }
 
+const components = {
+  p: Text
+}
+
 class EventCard extends Component {
   state = { active: false }
 
@@ -97,6 +102,7 @@ class EventCard extends Component {
             <Text>
               {summary}
             </Text>
+            <MDX components={components}>{summary}</MDX>
           </Modal>
         )}
         <Block
