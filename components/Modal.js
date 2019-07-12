@@ -66,7 +66,7 @@ const ButtonReset = styled(Box.withComponent('button')).attrs({
 `
 
 const CloseButton = props => (
-  <ButtonReset aria-label="Close" color="muted" {...props}>
+  <ButtonReset aria-label="Close" color={theme.colors.muted} {...props}>
     <Icon glyph="view-close-small" size={24} />
   </ButtonReset>
 )

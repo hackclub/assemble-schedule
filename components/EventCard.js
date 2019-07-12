@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-import { Heading, Box, Text } from '@hackclub/design-system'
+import styled, { css } from 'styled-components'
+import { Heading, Box, Text, Icon } from '@hackclub/design-system'
 import theme from './style'
 import Modal from './Modal'
 
@@ -27,8 +27,6 @@ function LightenDarkenColor(col, amt) {
 const Block = styled(Box)`
   background-color: ${theme.colors.blue};
   border-radius: ${theme.radius};
-  border: 1px solid ${theme.colors.white};
-  border-left: 0;
   position: absolute;
   left: 4em;
   right: 1em;
@@ -37,16 +35,24 @@ const Block = styled(Box)`
     theme.space[5] * (toSpecialTime(props.end) - toSpecialTime(props.start)) -
     1}px;
   z-index: 2;
-  cursor: ${props => (props.onClick === null) ? 'initial' : 'pointer'};
-  transition-duration: 0.25s;
   ${props =>
     props.flavor == 'closing' && `background-color: ${theme.colors.red} !important;`}
   ${props =>
     props.flavor == 'food' &&
     `background-color: ${theme.colors.orange} !important;`}
+  
+  ${props => (props.onClick === null) ? null :
+  css`
+    cursor: pointer;
+    transition-duration: 0.25s;
+    &:hover {
+      // background: ${LightenDarkenColor(theme.colors.blue, -10)};
+      filter: darken(.5);
+    }
+  `};
 
-  &:hover {
-    background: ${LightenDarkenColor(theme.colors.blue, -10)};
+  ${Icon} {
+    float: right;
   }
 `
 
@@ -85,7 +91,7 @@ class EventCard extends Component {
           <Modal toggle={this.toggle}>
             <Heading.h2>{name}</Heading.h2>
             <Text color="muted" mb={3}>
-              {start} – {end}
+              {start}–{end}
             </Text>
             <Text>{summary}</Text>
           </Modal>
@@ -98,8 +104,9 @@ class EventCard extends Component {
           flavor={flavor}
           onClick={typeof summary === 'undefined' ? null : this.toggle}
         >
+          {typeof summary !== 'undefined' && <Icon glyph="external" size={24} />}
           <Text.span bold>{name}</Text.span>
-          <Text>{subtitle}</Text>
+          <Text fontSize={1}>{subtitle}</Text>
         </Block>
       </>
     )
