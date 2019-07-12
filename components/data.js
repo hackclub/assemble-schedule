@@ -35,7 +35,7 @@ const schedule = [
       { name: 'Keynote: Zach Latta', subtitle: 'Founder of Hack Club', start: '9:30 am', end: '10:30 am' },
       { name: 'Break-out sessions', start: '10:30 am', end: '11:30 am' },
       { name: 'Break-out sessions', start: '11:30 am', end: '12:30 pm' },
-      { name: 'Lunch', subtitle: 'Sandwiches', start: '12:30 pm', end: '1:45 pm', flavor: 'food', summary: '' },
+      { name: 'Lunch', subtitle: 'Sandwiches & Salads', start: '12:30 pm', end: '1:45 pm', flavor: 'food', summary: 'Catered by Bi-Rite' },
       { name: 'Break-out sessions', start: '1:45 pm', end: '2:30 pm' },
       { name: 'Office hours', start: '2:30 pm', end: '3:45 pm', summary: `
 Guests with available office hours:
