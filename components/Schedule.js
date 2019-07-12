@@ -73,14 +73,19 @@ const Li = styled.li`
   }
 `
 
-const ChunkLabel = styled(Text.span).attrs({ color: theme.colors.muted, fontSize: 1 })`
+const ChunkLabel = styled(Text.span).attrs({
+  color: theme.colors.muted,
+  fontSize: 1
+})`
   display: inline-block;
   vertical-align: sub;
 `
 // 30-minute chunk of time
 const Chunk = ({ time }) => (
   <>
-    <Li><ChunkLabel>{time}</ChunkLabel></Li>
+    <Li>
+      <ChunkLabel>{time}</ChunkLabel>
+    </Li>
     {time && <Chunk />}
   </>
 )
@@ -99,15 +104,32 @@ const Chunk = ({ time }) => (
 //   </Block>
 // )
 
-const lengthOfDay = ['9:00 am', '10:00 am', '11:00 am', '12:00 pm', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm', '8:00 pm', '9:00 pm', '10:00 pm']
+const lengthOfDay = [
+  '9:00 am',
+  '10:00 am',
+  '11:00 am',
+  '12:00 pm',
+  '1:00 pm',
+  '2:00 pm',
+  '3:00 pm',
+  '4:00 pm',
+  '5:00 pm',
+  '6:00 pm',
+  '7:00 pm',
+  '8:00 pm',
+  '9:00 pm',
+  '10:00 pm'
+]
 
 export default ({ schedule = data }) => (
   <Base>
-    {schedule.map((date) => (
+    {schedule.map(date => (
       <DaySheet key={date.day.number} py={3} px={[2, 3]}>
         <DayHeading>{date.day.short}</DayHeading>
         <Ul style={{ position: 'relative' }}>
-          {date.events.map(e => (<EventCard key={e.name} event={e} />))}
+          {date.events.map(e => (
+            <EventCard key={e.name} event={e} />
+          ))}
         </Ul>
         <Ul>
           {lengthOfDay.map(d => (

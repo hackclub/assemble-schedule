@@ -2,7 +2,8 @@
 
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Container, Box, Icon, theme } from '@hackclub/design-system'
+import { Container, Box, Icon } from '@hackclub/design-system'
+import theme from './style'
 
 const modalKeyframes = keyframes`
   0% {
@@ -17,14 +18,14 @@ const modalKeyframes = keyframes`
 `
 
 const Overlay = styled(Box)`
-z-index: 1024;
-background-color: rgba(255, 255, 255, 0.75);
-backdrop-filter: blur(6px);
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  z-index: 1024;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 `
 
 const ModalContainer = styled(Container).attrs({ bg: 'white' })`
@@ -70,7 +71,7 @@ const CloseButton = props => (
   </ButtonReset>
 )
 
-export default ({children, toggle}) => (
+export default ({ children, toggle }) => (
   <>
     <ModalContainer>
       <CloseButton onClick={toggle} />

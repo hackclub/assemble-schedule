@@ -22,3 +22,5 @@ const theme = {
     primaryDark: '#F0984A'
   }
 }
+
+export default theme
