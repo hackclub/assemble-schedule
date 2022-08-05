@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import theme from './style'
+import React from "react";
+import Head from "next/head";
+import theme from "./style";
 
 export default () => (
   <Head>
@@ -11,7 +11,10 @@ export default () => (
     />
     {/* <style children={`body{background:${cx('darker')};}`} /> */}
     <style
-      children={`body{background:${theme.colors.primary};background-image:${theme.gradient(theme.colors.primary, theme.colors.primaryDark)};}`}
+      children={`body {
+        backgroundImage: 'url(/red.png)',
+        backgroundSize: '100px'
+      }`}
     />
   </Head>
-)
+);
