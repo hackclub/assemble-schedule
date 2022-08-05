@@ -35,5 +35,6 @@ export default () => (
       </FlagshipHeading>
     </Container>
     <Schedule />
+    <br />
   </>
 );
