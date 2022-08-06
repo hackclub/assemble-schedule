@@ -10,7 +10,7 @@ export default class extends App {
     return (
       <Container>
         <Head>
-          <title>Schedule – Flagship Summit</title>
+          <title>Schedule – Assemble</title>
           <link
             href="https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap"
             rel="stylesheet"
