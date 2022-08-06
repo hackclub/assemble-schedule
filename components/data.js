@@ -139,6 +139,8 @@ const schedule = [
         summary: `
 **Cybersecurity: Hacks, Exploits, and Flags**: The fun side of cybersecurity! Learn cyber tools and compete in a mini-competition! (Ganning Xu)
 
+**Talking to people**: Ever find it hard to talk to (new) people? I'll some tips and tricks to get the conversation going — let's talk! (Kayley Seow)
+
 **Intro to FPGA Design**: Learn how to use FPGAs to recreate the arcade game Pong. (Vijay Shanmugam, Michael Ilie)`,
       },
       {
