@@ -18,6 +18,7 @@ import Schedule from "../components/Schedule";
 const FlagshipHeading = styled(Heading.h1)`
   line-height: 1.125;
   font-family: "Space Grotesk";
+  font-weight: 700;
   text-transform: uppercase;
   text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 `;
