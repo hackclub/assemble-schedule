@@ -11,7 +11,7 @@ export default class extends App {
       <Container>
         <Head>
           <title>Schedule – Assemble</title>
-          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet"></link>
           {/* <style children={`body{background:${cx('darker')};}`} /> */}
           <style
             children={`body{background:${theme.cx(
