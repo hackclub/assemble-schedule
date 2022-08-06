@@ -137,11 +137,9 @@ const schedule = [
         start: "3:00 pm",
         end: "4:00 pm",
         summary: `
-**Cybersecurity: Hacks, Exploits, and Flags**: The fun side of cybersecurity! Learn cyber tools and compete in a mini-competition! (Ganning Xu)
+**Cybersecurity: Hacks, Exploits, and Flags**: The fun side of cybersecurity! Learn cyber tools and compete in a mini-competition! (Ganning Xu) Location: Bevel
 
-**Talking to people**: Ever find it hard to talk to (new) people? I'll some tips and tricks to get the conversation going — let's talk! (Kayley Seow)
-
-**Intro to FPGA Design**: Learn how to use FPGAs to recreate the arcade game Pong. (Vijay Shanmugam, Michael Ilie)`,
+**Intro to FPGA Design**: Learn how to use FPGAs to recreate the arcade game Pong. (Vijay Shanmugam, Michael Ilie) Location: Negative Space`,
       },
       {
         name: "🎉 Workshops Wave #6",
@@ -149,15 +147,17 @@ const schedule = [
         start: "4:30 pm",
         end: "5:30 pm",
         summary: `
-**Divination with gpt-3/j1**: language models are more powerful than you think (Celeste)
+**Divination with gpt-3/j1**: language models are more powerful than you think (Celeste) Location: Negative Space
 
-**Lockpicking**: Learn how to pick locks! (Max Speed)
+**Lockpicking**: Learn how to pick locks! (Max Speed) Location: Dodge
 
-**Muse Jam**: Come jam out with Hack Club's custom language for making music! Suitable for coders of all skill levels. (Leo)
+**Muse Jam**: Come jam out with Hack Club's custom language for making music! Suitable for coders of all skill levels. (Leo) Location: Bevel
 
-**Yoga**: yoga’tta join this workshop! relax, recharge, and ragdoll pose while stretching your mind and body with yoga, meditation, and more. (Arianna Martinelli)
+**Yoga**: yoga’tta join this workshop! relax, recharge, and ragdoll pose while stretching your mind and body with yoga, meditation, and more. (Arianna Martinelli) Location: Negative Space (Starts at 5)
 
-**Code Music Live**: Stuck on a bug? Use Sonic Pi to spread your creative wings and code music to cool off (Audrey Wang)
+**Code Music Live**: Stuck on a bug? Use Sonic Pi to spread your creative wings and code music to cool off (Audrey Wang) Location: Dodge (Starts at 5)
+
+**Talking to people**: Ever find it hard to talk to (new) people? I'll some tips and tricks to get the conversation going — let's talk! (Kayley Seow) Location: Bevel (Starts at 5)
 
 **Build a Camera!**: Have you ever used a disposable camera? Do you wonder how film works? Wonder no longer! Build a pinhole camera in a film canister! (Kunal Botla)`,
       },
