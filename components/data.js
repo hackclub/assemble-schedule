@@ -163,7 +163,7 @@ const schedule = [
       },
       {
         name: "🌮 Dinner Served",
-        subtitle: "Location: Courtyard",
+        subtitle: "Location: Kitchen",
         start: "7:30 pm",
         end: "8:30 pm",
       },
@@ -185,7 +185,7 @@ const schedule = [
     events: [
       {
         name: "🍪 Breakfast Begins",
-        subtitle: "Location: Courtyard",
+        subtitle: "Location: Kitchen",
         start: "7:00 am",
         end: "9:00 am",
       },
